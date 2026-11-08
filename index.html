@@ -18,7 +18,6 @@
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{background:var(--bg);color:var(--txt);font-family:"Segoe UI",system-ui,Roboto,sans-serif;line-height:1.65;overflow-x:hidden}
-  a{color:inherit}
   .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
   .glow{position:fixed;inset:-20% 0 auto 0;height:70vh;background:radial-gradient(60% 60% at 50% 0,rgba(110,231,160,.16),transparent 70%);pointer-events:none;z-index:0}
   nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(7,9,12,.7);border-bottom:1px solid var(--line)}
@@ -45,7 +44,7 @@
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
   .card{background:linear-gradient(180deg,var(--card),#0a0e13);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s}
   .card:hover{border-color:rgba(110,231,160,.35);transform:translateY(-3px)}
-  .card .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(110,231,160,.1);color:var(--acc);margin-bottom:12px}
+  .card .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(110,231,160,.1);color:var(--acc);margin-bottom:12px;font-size:18px}
   .card h3{font-size:16px;margin-bottom:6px}
   .card p{color:var(--mut);font-size:14px}
   .shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -54,8 +53,9 @@
   .shot:hover img{transform:scale(1.03)}
   .shot big{position:absolute;left:12px;bottom:12px;font-size:12px;background:rgba(0,0,0,.6);padding:4px 10px;border-radius:999px;backdrop-filter:blur(6px)}
   .shot.wide{grid-column:1/-1}
-  ol{list-style:none;counter-reset:s}
-  ol li{counter-increment:s;padding:14px 0 14px 52px;position:relative;color:var(--mut);border-bottom:1px solid var(--line)}
+  ol{list-style:none}
+  ol li{padding:14px 0 14px 52px;position:relative;color:var(--mut);border-bottom:1px solid var(--line);counter-increment:s}
+  ol{counter-reset:s}
   ol li::before{content:counter(s);position:absolute;left:0;top:12px;width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:rgba(110,231,160,.1);color:var(--acc);font-weight:700}
   code{background:#151b24;padding:2px 7px;border-radius:6px;font-size:13px;color:var(--acc)}
   details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
@@ -107,10 +107,10 @@
   <div class="eyebrow">Preview</div>
   <h2>Screenshots</h2>
   <div class="shots">
-    <div class="shot wide"><img src="img/esp.png" alt="Fortnite ESP overlay" loading="lazy"><big>ESP</big></div>
-    <div class="shot"><img src="img/aimbot.png" alt="Fortnite aimbot FOV" loading="lazy"><big>Aimbot</big></div>
-    <div class="shot"><img src="img/radar.png" alt="Fortnite radar hack" loading="lazy"><big>Radar</big></div>
     <div class="shot wide"><img src="img/menu.png" alt="Fortnite cheat menu" loading="lazy"><big>Menu</big></div>
+    <div class="shot"><img src="img/esp.png" alt="Fortnite ESP overlay" loading="lazy"><big>ESP</big></div>
+    <div class="shot"><img src="img/aimbot.jpg" alt="Fortnite aimbot" loading="lazy"><big>Aimbot</big></div>
+    <div class="shot wide"><img src="img/features.webp" alt="Fortnite cheat features" loading="lazy"><big>Features</big></div>
   </div>
 </section>
 
